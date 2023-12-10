@@ -325,6 +325,7 @@ name = "gitdomain"
 version = "0.1.0"
 dependencies = [
  "base64",
+ "jsonwebtoken",
  "log",
  "octocrab",
  "pretty_env_logger",
