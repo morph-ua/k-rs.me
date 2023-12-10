@@ -1,4 +1,4 @@
-name: Rust
+name: Rust - Check a Pull Request
 
 on:
   pull_request:
@@ -6,6 +6,7 @@ on:
 
 env:
   CARGO_TERM_COLOR: always
+  RUST_LOG: info
   ACTION: check
   PR_NUMBER: ${{ github.event.number }}
 
