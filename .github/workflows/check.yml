@@ -9,6 +9,7 @@ env:
   RUST_LOG: info
   ACTION: check
   PR_NUMBER: ${{ github.event.number }}
+  TOKEN: ${{ secrets.TOKEN }}
 
 jobs:
   build:
