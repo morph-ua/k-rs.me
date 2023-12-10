@@ -22,6 +22,11 @@ jobs:
           profile: minimal
           toolchain: stable
           override: true
+    - uses: Swatinem/rust-cache@v2
+      with:
+        env-vars: "CARGO CC CFLAGS CXX CMAKE RUST ACTION TOKEN"
+        cache-all-crates: "true"
+        save-if: "true"
     - uses: actions-rs/cargo@v1
       with:
           command: run
